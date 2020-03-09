@@ -1,0 +1,26 @@
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+.DS_Store
+/*.zip
+
+/wp/*
+/content/mu-plugins/*
+/content/plugins/*
+/content/themes/*
+
+!/wp/.gitkeep
+!/content/mu-plugins/index.php
+!/content/plugins/index.php
+!/content/themes/index.php
+
+/content/uploads
+/content/vendor
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

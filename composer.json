@@ -1,0 +1,42 @@
+{
+  "name": "chrisbutterworth/wp-base",
+  "description": "Project base for WordPress utilizing Composer based on mindsize/wp-project-base",
+  "authors": [
+    {
+      "name": "Chris Butteworth",
+      "email": "chris@code-designs.co.uk",
+      "homepage": "https://code-designs.co.uk"
+    }
+  ],
+  "homepage": "https://code-designs.co.uk",
+  "license": "GPL-2.0+",
+  "type": "project",
+  "config": {
+    "vendor-dir": "content/vendor"
+  },
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "johnpbloch/wordpress-core-installer": "^1.0",
+    "johnpbloch/wordpress-core": "^5.2.3",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  }
+}
